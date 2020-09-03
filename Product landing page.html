@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Add the title of the product landinf page here-->
+		<!-- CSS flexbox should be used at least once -->
+		<title>Second World War Model Tanks</title>
+		<style>
+			header {
+				text-align: center;
+			}
+			.vid {
+				
+			}
+			.all-text {
+				text-align: center;
+			}
+			<!-- The navigation bar -->
+			.navbar {
+			  overflow: hidden;
+			  background-color: #000000;
+			  position: fixed; <!-- Set the navbar to fixed position -->
+			  top: 0; <!-- Position the navbar at the top of the page -->
+			  width: 100%; <!-- Full width -->
+			}
+			<!-- Links inside the navbar -->
+			.navbar a {
+			  float: left;
+			  display: block;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+			<!-- Change background on mouse-over -->
+			.navbar a:hover {
+			  background: #ddd;
+			  color: black;
+			}
+			<!-- Main content -->
+			.mainr {
+			  margin-top: 30px; <!-- Add a top margin to avoid content overlay -->
+			}
+			.nav-link {
+			
+			}
+			.logo {
+			max-width: 5%;
+			height: auto;
+			align: left;
+			}
+			<!-- The page should have at least a media query-->
+		</style>
+	</head>
+	<body>
+		<header id="header" class="mainr">
+			<div>
+				<img id="header-img" src="https://thumbs.dreamstime.com/z/comic-cartoon-army-tank-retro-book-style-52915212.jpg" alt="World War 2 Models" class="logo">
+				<p>World War 2 Models</p>
+				<!--The nav bar must take you to different sections of the page,
+				the navbar should always be at the top of the viewpoint-->
+				<nav id="nav-bar" class="navbar">
+						<a href="#video" class="nav-link">Video</a>
+						<a href="#info-sect" class="nav-link">Info</a>
+						<a href="#form" class="nav-link">Contact us</a>
+				</nav>
+				<div>
+					<h1>Second World War Model Tanks</h1>
+					<h3>Ready to be built</h3>
+				</div>
+			</div>
+		</header>
+		<main>
+			<!--There must be an embedded video in this section-->
+			<div id="video">
+				<video id="product-vid" class="vid" width="854" height="480" controls autoplay>
+					<source src="https://youtu.be/Iox49GljUgY">
+				</video>
+			</div>
+			<!--Put some info about your product-->
+			<div id="info-sect">
+				<p></p><br>
+				<pre>
+				Building models of vehicles of all kinds yourself is one of 
+				the most beautiful pastimes for technology enthusiasts in many 
+				countries of the world. High-quality kits, as offered by Us, 
+				are characterised by faithful representations with many important 
+				details and high-quality workmanship. In addition, the descriptions 
+				provide information on the historical significance of the original. 
+				Cars, planes, ships or quadrocopters? Here at our online shop every 
+				technology fan will find the models that particularly interest him or 
+				her.</pre><br>
+				<p></p><br>
+				<p></p><br>
+				<p></p><br>
+			</div>
+			<!--There must be a form with an input field for "email" and a 
+			submit button, the email element should have a placeholder, have
+			a HTML5 validation, when the submit button is pressed the info is 
+			submitted to "https://www.freecodecamp.com/email-submit"-->
+			<div id="send-mail-sect">
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+					<div id="email-div">
+					<label id="email-label" for="email">Email</label><br>
+					<input type="email" id="email" placeholder="Email" required>
+				</div>
+				<div>
+				<button id="submit" type="submit">Submit</button>
+				</div>
+				</form>
+			</div>
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html>
